@@ -1,0 +1,15 @@
+extends layout
+block content
+    h1 Every item
+    ul
+        each val in items
+            li= val.name
+            if val.owner
+              a(data-method="DELETE" href='items/' + val._id rel="nofollow") Delete
+    div.text-center
+        form(class="new-item" method="POST" action="/items")
+            - var h1Classes = ['h3', 'mb-3', 'font-weight-normal']
+            h1(class=h1Classes) Add new item
+            label( for="name" class="sr-only") Name
+            input(type="text" name="name" id="name" class="form-control" placeholder="Item name" required)
+            button(class=buttonClass type="submit") Add
