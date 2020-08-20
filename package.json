@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/romandunets/node-express-skeleton#readme",
   "dependencies": {
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.17.2",
     "config": "^1.26.2",
     "cookie-parser": "^1.4.4",
